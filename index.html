@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./assets/tic-tac-toe.png" alt="logo">
+        </header>
+        <form action="#" class="form">
+            <div class="field">
+                <input type="text" name="firstPlayer" id="firstPlayer" class="input" placeholder="Player One">
+            </div>
+            <div class="field">
+                <input type="text" name="secondPlayer" id="secondPlayer" class="input" placeholder="Player Two">
+            </div>
+            <button type="button" class="start-button">Start Game</button>
+        </form>
+        <div class="hidden player.info">
+            <div class="players">
+                <div class="player-name first-player"></div>
+                <div class="versus">VS</div>
+                <div class="player-name second-player"></div>
+            </div>
+            <div class="current-player"></div>
+        </div>
+        <div class="hidden board"></div>
+        <button type="button" class="reset-button hidden"><img class="icon" src="./assets/reset.svg"/>Play Again</button>
+        <footer class="footer">
+            <p>Ejercicio Tic Tac Toe Odin</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
